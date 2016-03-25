@@ -1,56 +1,126 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8"/>
+	<head>
+		<meta charset="utf-8"/>
 
-	<title>Damien Gauthier - Développeur</title>
+		<title>Damien Gauthier - Développeur</title>
 
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans|Raleway:500' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/vendor/jquery.fullpage.css">
-	<link rel="stylesheet" href="css/vendor/slick.css">
-	<link rel="stylesheet" href="css/style.css">
-	
-</head>
-<body>
-	<aside class="side-menu">
-		<img src="images/logo-01.svg" alt="logo">
-		<nav class="main_menu">
-			<ul class="unstyled_list">
-				<li><a href="">Home</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Work</a></li>
-				<li><a href="">Contact</a></li>
-			</ul>
-		</nav>
-		<nav class="social_menu">
-			<ul class="unstyled_list">
-				<li><a href="">Twitter</a></li>
-				<li><a href="">Github</a></li>
-				<li><a href="">LinkedIn</a></li>
-			</ul>
-		</nav>
-	</aside>
-	<main id="fullpage" class="main-content">
-		<section id="section-home" class="section">
-			<h1>HOME</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae del</p>
-		</section>
-		<section id="section-about" class="section">
-			<h1>ABOUT</h1>
-		</section>
-		<section id="section-work" class="section">
-			<h1>WORK</h1>
-		</section>
-		<section id="section-contact" class="section">
-			<h1>CONTACT</h1>
-		</section>
-	</main>
+		<link rel="stylesheet" href="css/vendor/jquery.fullpage.css">
+		<link rel="stylesheet" href="css/vendor/slick.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:400,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-	<script src="js/vendor/jquery-1.12.2.min.js"></script>
-	<script src="js/vendor/jquery.fullpage.js"></script>
-	<script src="js/vendor/slick.js"></script>
-	<script src="js/app.js"></script>
+		<!-- Mon stylesheet -->
+		<link rel="stylesheet" href="css/style.css">
+		
+	</head>
+	<body>
+		<aside class="side-menu">
+			<a class="logo text-center" href="#home">
+				<img src="images/logo-01.svg" alt="logo">
+			</a>
+			<nav class="main_menu">
+				<ul class="unstyled_list">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<nav class="social_menu">
+				<ul class="unstyled_list text-center">
+					<li>
+						<a href="https://twitter.com/Dams3003" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/damgau" target="_blank">
+							<i class="fa fa-github-alt"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://be.linkedin.com/in/damien-gauthier-518993104" target="_blank">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main id="fullpage" class="main-content">
+			<section id="section-home" class="section">
+				<blockquote class="main-quotation">
+					<p class="text-center">challenge</p>
+				</blockquote>
+			</section>
+			<section id="section-about" class="section">
+				<div class="row">
+					<div class="col col-1">
+						<h2 class="underline-title">About me</h2>
+
+						<h3>Actuellement en formation <strong>Game Dev</strong> chez <a href="http://www.technobel.be/" target="_blank"><strong>Technobel</strong></a></h3>
+					</div>
+					<div class="col col-3">
+							<h4>Etudes</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum dolorem ipsum quaerat possimus atque cumque placeat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum dolorem ipsum quaerat possimus atque cumque placeat.</p>	
+					</div>
+					<div class="col col-3">
+							<h4>Etudes</h4>
+							<p> Reiciendis rerum odio architecto ipsam, accusamus necessitatibus sapiente? Officiis hic temporibus voluptas sit magni.Lorem.</p>
+					</div>
+					<div class="col col-3">
+						<h4>Etudes</h4>
+						<p> Reiciendis rerum odio architecto ipsam, accusamus necessitatibus sapiente? Officiis hic temporibus voluptas sit magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</section>
+			<section id="section-work" class="section">
+				
+				<div class="row">
+					<div class="col col-1">
+						<h2 class="underline-title">Work</h2>
+
+						<h3>Il faut un début à tout</h3>
+					</div>
+					<div class="col col-2-3">
+					</div>
+					<div class="col col-3">
+						<h4>Heroic Age</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni fugiat harum sapiente delectus quas iste sed, libero veritatis atque corporis. Sunt dignissimos reiciendis, sequi veritatis itaque eveniet quis repellat deserunt.</p>
+						<p><a class="btn-primary" href="#">Voir mon jeu</a></p>
+					</div>
+				</div>			
+			</section>
+			<section id="section-contact" class="section">
+				<div class="row">
+					<div class="col col-1">
+						<h2 class="underline-title">Contact</h2>
+
+						<h3>N'hésitez pas à me joindre pour plus d'informations</h3>
+					</div>
+					<div class="col col-2">
+							<h4>Coordonnées</h4>
+							<p>
+								<i class="fa fa-map-marker"></i>
+								Adresse : Rue des Tanneurs, n°18 <br> Marche-en-Famenne
+							</p>
+							<p>
+								<i class="fa fa-phone"></i> Phone : <a href="tel:+320471109893">+32(0)471 10 98 93</a>
+							</p>
+							<p>
+								<i class="fa fa-envelope-o"></i>
+								Email : <a href="mailto:damien?gauthier3003@gmail.com?subject=Message de courtoisie &body=Bonjour Damien,">damien.gauthier3003@gmail.com</a>
+							</p>
+					</div>
+				</div>		
+			</section>
+		</main>
+
+		<script src="js/vendor/jquery-1.12.2.min.js"></script>
+		<script src="js/vendor/jquery.fullpage.js"></script>
+		<script src="js/vendor/slick.js"></script>
+		<script src="js/app.js"></script>
 
 
-</body>
+	</body>
 </html>

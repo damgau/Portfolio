@@ -1,10 +1,41 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
-h1,h2,h3,h4,h5,h6,h7 {
+h1,h2,h3,h4,h5,h6 {
 	font-family: 'Raleway', sans-serif;
-	font-weight: normal;
+	font-weight: 400;
 }
+/*_____________________
+	HELPERS
+_______________________*/
+
+.unstyled_list {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+.text-center { text-align: center; }
+
+/*_____________________
+		GRID
+_______________________*/
+.row {
+	float: left;
+	margin: 0 40px;
+}
+
+.col {
+	float: left;
+	padding: 0 15px;
+}
+.col-1 {width: 100%;}
+.col-2 {width: 50%;}
+.col2-3 {width: 66.66%;}
+.col-3 {width: 33.333%;}
+
 /*_____________________
 	SIDE BAR
 _______________________*/
@@ -16,20 +47,52 @@ _______________________*/
 	position:fixed;
 	z-index: 1;
 }
-.main_menu {
+
+.side-menu a {
+	color: #333;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.logo {
+	display: block;
+	position: relative;
+	top: 30px;
 
 }
-.unstyled_list {
-	list-style: none;
-	padding:0;
-	margin:0;
+.main_menu {
+	position: relative;
+	transform: rotate(270deg);
+	top:90px;
+
 }
 .main_menu ul {
-	
+	display: flex;
+	flex-direction: row-reverse;
 }
+.main_menu ul li {
+	margin: 0 10px;
+}
+/*_____________________
+	ICONS
+_______________________*/
 .social_menu {
+	position: absolute;
+    bottom: 30px;
+    width: 100%;
 
 }
+
+.fa fa-twitter {
+
+}
+
+.fa fa-github-alt {
+
+}
+.fa fa-linkedin {
+
+}
+
 /*_____________________
 	MAIN CONTENT
 _______________________*/
@@ -41,4 +104,67 @@ _______________________*/
 .section {
 	background: #333;
 	color: #fff;
+}
+h2 {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h3 {
+	width: 66%;
+	margin:30px 0;
+	font-size: 20px;
+}
+h4 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.underline-title:after {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 2px;
+	background: #ff5000;
+	margin-top: 10px;
+}
+.section a {
+	color: #ff5000;
+	text-decoration: none;
+}
+.section a:hover {
+	text-decoration: underline;
+}
+.section .btn-primary {
+	padding: 10px 20px;
+	background: #ff5000;
+	color:#fff;
+	text-decoration: none;
+	border-radius: 4px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+.section .btn-primary:hover {
+	text-decoration: none;
+	background: #A53400;
+}
+
+#section-home {
+	background-image: linear-gradient(rgba(91,83,38,0.5),rgba(22,22,22,0.6)), url(../images/photo-LakeLouise.jpg);     
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.main-quotation {}
+.main-quotation p {
+	text-transform: capitalize;
+    font-size: 30px;
+    letter-spacing: 60px;
+    cursor:default;
+}
+
+#section-contact p i {margin-right: 10px;}
+
+.btn-primary {
+	font-size: 14px;
 }
