@@ -18,7 +18,7 @@ _______________________*/
 	margin:0;
 }
 .text-center { text-align: center; }
-
+.img-responsive{ width:100%; }
 /*_____________________
 		GRID
 _______________________*/
@@ -33,7 +33,7 @@ _______________________*/
 }
 .col-1 {width: 100%;}
 .col-2 {width: 50%;}
-.col2-3 {width: 66.66%;}
+.col-2-3 {width: 66.66%;}
 .col-3 {width: 33.333%;}
 
 /*_____________________
@@ -168,3 +168,102 @@ h4 {
 .btn-primary {
 	font-size: 14px;
 }
+.slider-wrapper{
+	overflow:hidden;
+}
+.slider {
+ 	width: 800px;
+ }
+ @media screen and (min-width: 1641px) {
+ 	.slider {
+ 		width:960px;
+ 	}
+ }
+ @media screen and (max-width: 1640px) {
+ 	.slider {
+ 		width:400px;
+ 	}
+ }
+ @media screen and (max-width: 1024px) {
+ 	.slider {
+ 		width:400px;
+ 	}
+ }
+
+ .slick-dots {
+ 	list-style: none;
+ 	margin: 10px 0;
+ 	padding: 0;
+ 	text-align: right; 
+ }
+ .slick-dots li {
+ 	display: inline-block;
+ 	margin-right: 4px;
+ }
+ .slick-dots li button {
+ 	font-size: 0px;
+ 	background: #A53400;
+ 	padding: 5px;
+ 	border: none;
+ 	width: 15px;
+ 	height: 15px;
+ 	border-radius: 50%;
+ 	cursor: pointer;
+ 	outline: 0;
+ }
+ .slick-dots li.slick-active button {
+ 	background: #ff5000;
+ 	width: 17px;
+ 	height: 17px;
+ }
+ .btn-toggle-menu {display: none;}
+ @media screen and (max-width: 600px) {
+ 	.side-menu {
+ 		height: 70px;
+ 		width:100%;
+ 	}
+ 	.logo { 
+ 		position: relative;
+ 		top: 0px;
+ 		display: block;
+ 		float: left;
+ 		width: 100%;
+ 	}
+ 	.main_menu {
+ 		top:0;
+ 		transform: none;
+ 		position: relative;
+ 		float: left;
+ 		width: 100%;
+ 		/*margin-top: -8px;*/
+ 		
+ 	}
+ 	.main_menu ul {
+ 		display: block;
+ 		background: white;
+ 	}
+ 	.main-content {
+ 		padding-left: 0;
+ 	}
+ 	.social_menu {display: none;}
+ 	.side-menu a {
+ 		padding: 10px;
+ 		display: block;
+ 	}
+ 	.hide-menu {display: none;}
+ 	.btn-toggle-menu {
+ 		display: block;
+ 		position: absolute;
+ 		right: 0px;
+ 		font-size: 21px;
+ 		z-index: 2;
+ 		padding:10px 20px;
+ 		cursor: pointer;
+ 	}
+ 	.main-quotation p {
+	text-transform: capitalize;
+    font-size: 25px;
+    letter-spacing: 30px;
+    cursor:default;
+	}
+ }
