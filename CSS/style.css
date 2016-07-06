@@ -36,6 +36,19 @@ _______________________*/
 .col-2-3 {width: 66.66%;}
 .col-3 {width: 33.333%;}
 
+.col-slider-1 {
+	padding-left: 100px;
+	width: 100%;
+}
+.col-slider-2-3 {
+	padding-left: 100px;  
+	width: 66.66%;
+}
+.col-slider-3 {
+	padding-right: 100px;  
+	width: 33.33%;
+}
+
 /*_____________________
 	SIDE BAR
 _______________________*/
